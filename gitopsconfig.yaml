@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gitops-infra-configs
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: dnb-automation
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    directory:
+      recurse: true
+    path: 0-bootstrap/single-cluster/1-infra/
+    repoURL: https://github.com/pdragset/Automation_demo_infra
+    targetRevision: HEAD
