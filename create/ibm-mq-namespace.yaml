@@ -1,8 +1,0 @@
-apiVersion: argoproj.io/v1alpha1
-kind: namespace
-metadata:
-  name: ibm-mq
-  namespace: ibm-mq
-spec:
-  finalizers:
-  - kubernetes
