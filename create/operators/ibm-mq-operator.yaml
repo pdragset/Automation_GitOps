@@ -3,7 +3,7 @@ kind: Subscription
 metadata:
   name: ibm-mq
   namespace: openshift-operators 
-annotations:
+  annotations:
     argocd.argoproj.io/sync-wave: "20"
 spec:
   channel: v1.3-eus
