@@ -1,5 +1,5 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Subscription
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
 metadata:
   name: ibm-mq
   namespace: openshift-operators 
