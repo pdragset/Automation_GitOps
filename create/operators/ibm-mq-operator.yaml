@@ -1,10 +1,10 @@
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
-  name: openshift-gitops-operator
+  name: ibm-mq
   namespace: openshift-operators 
 spec:
-  channel: stable
-  name: openshift-gitops-operator
-  source: redhat-operators 
+  channel: v1.3-eus
+  name: ibm-mq 
+  source: ibm-operator-catalog 
   sourceNamespace: openshift-marketplace 
